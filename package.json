@@ -18,14 +18,11 @@
   },
   
   "scripts": {
-    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
-    "start-frontend": "react-scripts start",
-    "start-backend": "cd backend && nodemon index.js" ,
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   
   "eslintConfig": {
     "extends": [
