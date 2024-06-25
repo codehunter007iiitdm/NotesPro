@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import NoteContext from "./notecontext";
 
-const host="http://localhost:5000/"
+const host="https://notespro-1.onrender.com/"
 
 const NoteState=(props)=>{
     const initialnotes=[]
@@ -13,7 +13,7 @@ const NoteState=(props)=>{
 
     //fetch all notes
     const getNotes=async ()=>{
-      const response = await fetch("http://localhost:5000/notes/fetchallnotes", {
+      const response = await fetch("https://notespro-1.onrender.com/notes/fetchallnotes", {
         method: "GET", // *GET, POST, PUT, DELETE, etc.
         headers:{
           'Content-Type':'application/json',
