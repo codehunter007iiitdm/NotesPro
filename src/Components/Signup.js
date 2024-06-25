@@ -9,7 +9,7 @@ const Signup = (props) => {
   const handleSubmit=async (e)=>{
     setCredentials({username:"",email:"",password:"",cpassword:""})
     e.preventDefault();
-    const response=await fetch("https://notespro-1.onrender.com/auth/createuser",{
+    const response=await fetch("https://notes-1-91sz.onrender.com/auth/createuser",{
         method:'POST',
         headers:{
           'Content-Type':'application/json',

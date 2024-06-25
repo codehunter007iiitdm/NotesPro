@@ -9,7 +9,7 @@ const Login = (props) => {
   const handleSubmit=async (e)=>{
     setCredentials({email:"",password:""})
     e.preventDefault();
-    const response=await fetch("https://notespro-1.onrender.com/auth/login",{
+    const response=await fetch("https://notes-1-91sz.onrender.com/auth/login",{
         method:'POST',
         headers:{
           'Content-Type':'application/json',
