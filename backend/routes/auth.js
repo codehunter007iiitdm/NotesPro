@@ -16,7 +16,7 @@ router.post('/createuser',[ // express validator validations array
     //if errors request errors(check express-validator documentation)
     const result = validationResult(req);
     if(!result.isEmpty()){
-        return res.status(400).json({success,errors:errors.array()})
+        return res.status(400).json({success,errors:result.array()})
     }
     try{  //Using the try block just to ensure, if any unkown error occurs
     //check whether the user with this email exists already (This a way to maintain unique emails instead of using indexes)
